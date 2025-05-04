@@ -13,6 +13,8 @@ add: something like this
 Host github.com-swarupkarmokar
   HostName github.com
   User git
+  AddKeysToAgent yes
+  UseKeychain yes
   IdentityFile ~/.ssh/id_rsa_personalGit
 
 
@@ -20,3 +22,11 @@ Run this command in code editor
 git clone git@github.com-swarupkarmokar:SwarupKarmokar/ssh-key-add.git . // add your config host.
 1. git config user.name “user-name”
 2. git config user.email “user-email”
+
+
+Tips:  
+for opening the ssh config: open -e ~/.ssh/config.... VS code specific: code ~/.ssh/config
+for checking correct config refference: git remote -v
+in case if correct ssh config not showing up: ssh-add ~/.ssh/id_rsa_personalGit // here personalGit is mine local one
+Showing ssh connection: ssh -T git@github.com-swarupkarmokar // This one is mine
+
