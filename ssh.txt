@@ -15,6 +15,7 @@ Host github.com-swarupkarmokar
   User git
   AddKeysToAgent yes
   UseKeychain yes
+  IdentitiesOnly yes
   IdentityFile ~/.ssh/id_rsa_personalGit
 
 
